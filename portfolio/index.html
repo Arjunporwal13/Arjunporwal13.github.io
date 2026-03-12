@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun Porwal — CS Student & Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>AP<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="dot"></span> Available for internships
+      </div>
+      <h1 class="hero-name">
+        <span class="line-1">Arjun</span>
+        <span class="line-2">Porwal</span>
+      </h1>
+      <p class="hero-title">
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-sub">Building the web, one line at a time.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">01</span>
+        <span class="label-text">About Me</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="avatar-frame">
+            <div class="avatar-inner">
+              <span class="avatar-initials">AP</span>
+            </div>
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="floating-badge badge-1">
+              <span>2nd Year</span>
+            </div>
+            <div class="floating-badge badge-2">
+              <span>BTech CS</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">Crafting digital<br><em>experiences</em> with code</h2>
+          <p class="about-body">I am a second-year Computer Science student passionate about software development, problem solving, and Data Structures & Algorithms. I enjoy building web applications and improving my coding skills every day.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Problems to Solve</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">02</span>
+        <span class="label-text">Skills</span>
+      </div>
+      <h2 class="section-title">My Tech <em>Arsenal</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-skill="Python">
+          <div class="skill-icon">🐍</div>
+          <span class="skill-name">Python</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="C">
+          <div class="skill-icon">⚙️</div>
+          <span class="skill-name">C Programming</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="C++">
+          <div class="skill-icon">🔧</div>
+          <span class="skill-name">C++</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="Java">
+          <div class="skill-icon">☕</div>
+          <span class="skill-name">Java</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="HTML">
+          <div class="skill-icon">🌐</div>
+          <span class="skill-name">HTML</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="CSS">
+          <div class="skill-icon">🎨</div>
+          <span class="skill-name">CSS</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="PostgreSQL">
+          <div class="skill-icon">🗄️</div>
+          <span class="skill-name">PostgreSQL</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="DSA">
+          <div class="skill-icon">📊</div>
+          <span class="skill-name">DSA</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">03</span>
+        <span class="label-text">Projects</span>
+      </div>
+      <h2 class="section-title">What I've <em>Built</em></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-num">01</div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">Study Sync</h3>
+            <p class="project-desc">A productivity web application with a calendar system, chatbot, and chatroom built specifically for students to stay organized and collaborate.</p>
+            <div class="project-features">
+              <span>📅 Calendar System</span>
+              <span>🤖 Chatbot</span>
+              <span>💬 Chatroom</span>
+            </div>
+          </div>
+          <div class="project-arrow">
+            <a href="https://github.com/Arjunporwal13" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">02</div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <h3 class="project-title">Paroles World</h3>
+            <p class="project-desc">A lyrics browsing website where users can select an artist, view their songs, and read the lyrics in a clean, organized interface with intuitive navigation.</p>
+            <div class="project-features">
+              <span>🎵 Artist Browse</span>
+              <span>📝 Lyrics View</span>
+              <span>🎨 Clean UI</span>
+            </div>
+          </div>
+          <div class="project-arrow">
+            <a href="https://github.com/Arjunporwal13" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Coding Profiles Section -->
+  <section class="profiles section" id="profiles">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">04</span>
+        <span class="label-text">Coding Profiles</span>
+      </div>
+      <h2 class="section-title">Find Me <em>Online</em></h2>
+      <div class="profiles-grid">
+        <a href="https://github.com/Arjunporwal13" target="_blank" rel="noopener" class="profile-card">
+          <div class="profile-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div class="profile-info">
+            <span class="profile-name">GitHub</span>
+            <span class="profile-handle">@Arjunporwal13</span>
+          </div>
+          <span class="profile-arrow">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/arjun-porwal" target="_blank" rel="noopener" class="profile-card">
+          <div class="profile-icon linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div class="profile-info">
+            <span class="profile-name">LinkedIn</span>
+            <span class="profile-handle">Arjun Porwal</span>
+          </div>
+          <span class="profile-arrow">→</span>
+        </a>
+        <a href="https://takeuforward.org/profile/Arjunporwal" target="_blank" rel="noopener" class="profile-card">
+          <div class="profile-icon tuf">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="profile-info">
+            <span class="profile-name">TakeUForward</span>
+            <span class="profile-handle">Arjun Porwal</span>
+          </div>
+          <span class="profile-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">05</span>
+        <span class="label-text">Contact</span>
+      </div>
+      <div class="contact-inner">
+        <h2 class="contact-heading">Let's <em>Connect</em></h2>
+        <p class="contact-sub">Have an opportunity or want to collaborate? I'd love to hear from you.</p>
+        <a href="mailto:arjunporwal2005@gmail.com" class="contact-email">
+          <span class="email-icon">✉</span>
+          arjunporwal2005@gmail.com
+        </a>
+        <div class="contact-socials">
+          <a href="https://github.com/Arjunporwal13" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/arjun-porwal" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:arjunporwal2005@gmail.com" class="social-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & Built by <span>Arjun Porwal</span> · 2025</p>
+      <p class="footer-mono">// coded with ❤️ and ☕</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
